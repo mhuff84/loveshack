@@ -1,0 +1,87 @@
+extends layout
+
+block content
+  .brand the 8601
+  .address-bar 8601 Millie Ridge | Celina, TN 38551 | 123.456.7890
+  //- Navigation
+  nav.navbar.navbar-default(role='navigation')
+    .container
+      //- Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        //- navbar-brand is hidden on larger screens, but visible when the menu is collapsed
+        a.navbar-brand(href='/') the 8601
+      //- Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li
+            a(href='/') Home
+          li
+            a(href='javascript:alert("under construction")') Ameneties
+          li
+            a(href='javascript:alert("under construction")') Book
+          li
+            a(href='javascript:alert("under construction")') Contact Us
+  .container
+    .row
+      .box
+        .col-lg-12.text-center
+          #carousel-example-generic.carousel.slide
+            //- Indicators
+            ol.carousel-indicators.hidden-xs
+              li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic', data-slide-to='1')
+              li(data-target='#carousel-example-generic', data-slide-to='2')
+            //- Wrapper for slides
+            .carousel-inner
+              .item.active
+                img.img-responsive.img-full(src='img/slide1.jpg', alt='')
+              .item
+                img.img-responsive.img-full(src='img/slide2.jpg', alt='')
+              .item
+                img.img-responsive.img-full(src='img/slide3.jpg', alt='')
+            //- Controls
+            a.left.carousel-control(href='#carousel-example-generic', data-slide='prev')
+              span.icon-prev
+            a.right.carousel-control(href='#carousel-example-generic', data-slide='next')
+              span.icon-next
+          h2.brand-before
+            small Welcome to
+          h1.brand-name the 8601
+    .row
+      .box
+        .col-lg-12
+          hr
+          h2.intro-text.text-center
+            strong The Property
+          hr
+          p
+            | We can share some info giving people some insight into the story of the property
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+    .row
+      .box
+        .col-lg-12
+          hr
+          h2.intro-text.text-center
+            strong The Family
+          hr
+          img.img-responsive.img-border.img-left(src='img/intro.jpg', alt='',style={width:'300px',height:'200px'})
+          hr.visible-xs
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+  footer
+    .container
+      .row
+        .col-lg-12.text-center
+          p Copyright © Huff Solutions 2017
+      
